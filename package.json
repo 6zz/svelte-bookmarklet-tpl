@@ -1,0 +1,32 @@
+{
+  "name": "svelte-bookmarklet template",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "bookmarklet": "npm run build && node cli/bookmark.js",
+    "clean": "rm public/build/*"
+  },
+  "node": {
+    "engine": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime": "^7.11.2",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sirv-cli": "^0.4.4",
+    "svelte-preprocess": "^4.0.8"
+  }
+}
