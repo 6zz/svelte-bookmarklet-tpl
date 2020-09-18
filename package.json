@@ -1,5 +1,5 @@
 {
-  "name": "svelte-bookmarklet template",
+  "name": "svelte-bookmarklet-template",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
