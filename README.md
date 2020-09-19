@@ -1,6 +1,6 @@
-# Floaty
+# Purpose
 
-A Bookmarklet for creating a floaty on any page.
+A template for building bookmarklets with svelte for building UI components.  It can be cloned with `npx degit 6zz/svelte-bookmarklet-tpl project-name`.
 
 ## Dependency
 
