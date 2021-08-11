@@ -2,10 +2,9 @@
   "name": "svelte-bookmarklet-template",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "gulp",
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "bookmarklet": "npm run build && node cli/bookmark.js",
     "clean": "rm public/build/*"
   },
   "node": {
@@ -18,14 +17,18 @@
     "@rollup/plugin-babel": "^5.2.0",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-header": "^2.0.9",
+    "gulp-terser": "^2.0.1",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-svelte": "^6.1.1",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "node-sass": "^4.14.1",
+    "sass": "^1.37.5",
     "sirv-cli": "^0.4.4",
     "svelte-preprocess": "^4.0.8"
   }

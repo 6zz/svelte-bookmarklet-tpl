@@ -12,16 +12,8 @@ const floatyCfg = {
 	output: [{
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
-	}, {
-		format: 'cjs',
-		name: 'app',
-		file: 'public/build/bundle.cjs.js',
-		plugins: [
-			getBabelOutputPlugin({
-				presets: ['@babel/preset-env']
-			})
-		]
+		file: 'public/build/bundle.js',
+		strict: false
 	}],
 	plugins: [
 		svelte({

@@ -6,12 +6,15 @@ A template for building bookmarklets with svelte for building UI components.  It
 
 * node >= 10.0.0 because rollupjs
 
+## Development
+
+1. run `npm run dev` will start a live reload dev session
+1. `npm start` to start the localhost
+
 ## Create Bookmarklet
 
-1. run `npm run bookmarklet`
-1. `npm start` to start the localhost
-1. http://localhost:5000/build/bookmarklet
-1. drag and drop the link to bookmark bar
+1. `npm run build` to generate the `dist/bundle.js`
+1. copy the content from the bundle.js file into bookmark's address field
 
 ## Resources
 
